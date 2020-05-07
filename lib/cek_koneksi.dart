@@ -4,13 +4,14 @@ import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 
 import 'tampil_webview.dart';
+import 'loader.dart';
 
 class Cek_koneksi extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xffbbdefb),
+        // backgroundColor: Color(0xffbbdefb),
         // appBar: AppBar(
         //   title: Text("Routing & Navigation"),
         // ),
@@ -24,7 +25,10 @@ class Cek_koneksi extends StatelessWidget {
               switch (result) {
                 case ConnectivityResult.none:
                   // print("no net");
-                  return Center(child: Text("No Internet Connection!"));
+                  return Center(
+                    // child: Text("No Internet Connection!"),
+                    child: Loader(),
+                  );
                 case ConnectivityResult.mobile:
                 case ConnectivityResult.wifi:
                   // print("yes net");
@@ -33,7 +37,10 @@ class Cek_koneksi extends StatelessWidget {
                   );
                     
                 default:
-                  return Center(child: Text("No Internet Connection!"));
+                  return Center(
+                    // child: Text("No Internet Connection!")
+                    child: Loader(),
+                    );
               }
             })
       );
