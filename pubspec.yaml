@@ -27,6 +27,8 @@ dependencies:
   webview_flutter: 0.2.0
   # connectivity: ^0.4.8+5
   connectivity: 0.4.4+1
+  double_back_to_close_app: ^1.2.0
+  fluttertoast: ^4.0.1
 
 dev_dependencies:
   flutter_test:

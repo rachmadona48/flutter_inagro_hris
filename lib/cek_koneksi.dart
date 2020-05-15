@@ -42,7 +42,12 @@ class Cek_koneksi extends StatelessWidget {
                     child: Loader(),
                     );
               }
-            })
+            }),
+            // floatingActionButton: new FloatingActionButton(
+            //   onPressed: ()=> exit(0),
+            //   // tooltip: 'Close app',
+            //   // child: new Icon(Icons.close),
+            // ), 
       );
   }
 }
